@@ -1,4 +1,4 @@
-#function num to roman in unit
+#function convert unit numbert to roman
 def mainUnit(strNum):
   return {
     "1" : "I",
@@ -57,10 +57,6 @@ def toRoman(strNum):
   else :
     return "0"  
 
-#def toRoman2(strNum) :
-  #for i in len(strNum):
-
-
 def convertToRoman(num):
   if num > 3999:
     return "Too many"
@@ -70,6 +66,3 @@ def convertToRoman(num):
   romanNumber = toRoman(strNum).replace('0','')
   return romanNumber
 
-
-re = convertToRoman(3909)
-print(re, type(re))
